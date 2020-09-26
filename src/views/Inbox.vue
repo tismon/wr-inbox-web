@@ -28,7 +28,7 @@
     <!-- pagination -->
     <div class="ml-5">
       <paginate
-        :page-count="(totalEmails/perPage)"
+        :page-count="Math.trunc(totalEmails/perPage)"
         :page-range="3"
         :margin-pages="2"
         :click-handler="getEmails"
